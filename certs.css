@@ -1,20 +1,207 @@
-@page{
-    size:A4 landscape;
-    margin:10mm;
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+@font-face {
+    font-family: 'Transcend-Lignt';
+    src: url('Transcend-Light.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: aqua;
-    width: 100%; /* Ensure the body takes the full width */
-    height: 100vh; /* Ensure the body takes the full viewport height */
+
+@page{
+    size:A4 landscape;
+    margin:0mm;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+p {
+    margin:0.5em;
+    padding:0;
+}
+
+h4 {
+    margin:0.5em;
+    font-weight: 800;
+    padding:0;
+    font-size: 1.003750010037504em;
+    font-family: "Myriad Pro", Myriad;
+}
+
+h3 {
+    margin:0.5em;
+    padding:0;
 }
 
 .border-pattern {
-    position: relative; /* Ensure position is set */
-    background-color: red; /* For visibility of the clipped area */
-    width: 100%; /* Full width of the body */
-    height: 50%; /* 50% of the body height */
+    position: relative;
+    /* background-image: url("Chem-Labs\ Certificate\ Template.png"); */
+
+    width: 297mm;
+    height: 210mm;
+
+
+}
+.bg-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 297mm;
+    height: 210mm;
+    object-fit: contain;
 }
 
+.bg-competence{
+    position: absolute;
+    left: 50%; /* Move the element's left edge to the center of the container */
+    transform: translateX(-50%); /* Shift the element back by half its width */
+    top: 28%;
+    width: 44.585mm;
+    height: 44.585mm;
+}
+
+.bg-chemlabslogo {
+    position: absolute;
+    bottom: 8%;
+    width: 57.514mm;
+    height: 15.025mm;
+    left: 50%; /* Move the element's left edge to the center of the container */
+    transform: translateX(-50%); /* Shift the element back by half its width */
+}
+
+.cert-no{
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    top: 6.5%;
+    right: 5%;
+    font-family: "Myriad Pro", Myriad;
+}
+
+.footer-container {
+    position: absolute;
+    bottom: 8;
+    left: 0;
+    right: 0;
+    width: 297mm;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate-content {
+    width: 278.058mm;
+    height: 198.058mm;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.certificate-title {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.certificate-body {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 12em;
+}
+
+.certificate-title-head {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+    letter-spacing: 0.1em;
+    /* font-family: 'Lora', serif; */
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 100;
+}
+.certificate-title-sub {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0.3em;
+    letter-spacing: 0.2em;
+}
+
+.name-for-certificate{
+    text-align: center;
+    font-size: 4.60052087933856em;
+    margin: 0;
+    font-family: 'Allura', cursive;
+}
+
+.training-info {
+    color: #7C377c;
+    font-weight: 600;
+    font-size: 1.003750010037504em;
+    font-family: "Myriad Pro", Myriad;
+}
+
+.certificate-footer {
+    color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.signatures {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:space-between;
+    height: 1em;
+}
+
+.right-signature {
+    padding: 1em;
+    width: 250px;
+    border-top: 1px solid black;
+    font-size: 0.878281258782816em;
+    font-family: "Myriad Pro", Myriad;
+}
+
+.left-signature {
+    padding: 1em;
+    width: 250px;
+    border-top: 1px solid black;
+    font-size: 0.878281258782816em;
+    font-family: "Myriad Pro", Myriad;
+}
+
+.expiry-date {
+    width: 278.058mm;
+    display: flex;
+    justify-content: flex-end;
+    font-size: .6em;
+    font-family: "Myriad Pro", Myriad;
+}
